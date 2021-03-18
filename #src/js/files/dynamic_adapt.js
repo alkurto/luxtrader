@@ -5,7 +5,7 @@
 // https://www.youtube.com/c/freelancerlifestyle
 
 "use strict";
-
+console
 
 function DynamicAdapt(type) {
 	this.type = type;
