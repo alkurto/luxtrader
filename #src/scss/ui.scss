@@ -1,8 +1,40 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
+.title {
+    // .title__item
+    &__item {
+        font-family: "ceremonious";
+        color: #bb9c66;
+        font-size: 40px;
+        margin: 0px 0px 20px/40px*1em 0px;
+    }
+    // .title__main
+    &__main {
+        font-family: "PFDin";
+        font-size: 35px;
+        letter-spacing: 5.25px;
+        line-height: 35px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+    }
+    // .title__text
+    &__text {
+        margin: 25px auto 0px auto;
+        max-width: 700px;
+        color: #fff;
+        font-size: 15px;
+        line-height: calc(25 / 15);
+    }
+}
+
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
-.green {
-    color: green;
+._fw-regular {
+    font-weight: 400;
+}
+
+._w {
+    color: #fff;
 }
 
 .row:after {
@@ -150,8 +182,7 @@ body.ie {
 
 //====================================================================================================
 // ._more-block
-._more-block {}
-
+// ._more-block {}
 // ._more-content
 ._more-content {
     transition: all 0.3s ease 0s;
@@ -159,8 +190,7 @@ body.ie {
 }
 
 // ._more-item
-._more-item {}
-
+// ._more-item {}
 // ._more-link
 ._more-link {
     cursor: pointer;
@@ -272,18 +302,18 @@ body.ie {
     .slick-slide {
         position: relative;
     }
-    .slick-arrow {
-        &.slick-prev {}
-        &.slick-next {}
-    }
-    .slick-dots {
-        li {
-            button {}
-            &.slick-active {
-                button {}
-            }
-        }
-    }
+    // .slick-arrow {
+    // &.slick-prev {}
+    // &.slick-next {}
+    // }
+    // .slick-dots {
+    //     li {
+    //         button {}
+    //         &.slick-active {
+    //             button {}
+    //         }
+    //     }
+    // }
 }
 
 //=====================================================================================================================
@@ -295,10 +325,8 @@ body.ie {
 }
 
 //=====================================================================================================================
-._tabs {}
-
-._tabs-item {}
-
+// ._tabs {}
+// ._tabs-item {}
 ._tabs-block {
     display: none;
     &._active {
