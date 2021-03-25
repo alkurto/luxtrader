@@ -1,5 +1,7 @@
 .header {
     background-color: #1c242a;
+    position: relative;
+    z-index: 50;
     // .header__container
     &__container {
         position: relative;
@@ -42,7 +44,7 @@
     // .menu__body
     &__body {
         @media (max-width: $md3+px) {
-            background-color: hsla(206, 20%, 14%, 0.384);
+            background-color: hsla(206, 20%, 14%, 0.784);
             position: fixed;
             left: 0;
             top: 0;

@@ -59,7 +59,7 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let sliderSlider = new Swiper('.slider', {
+let main_slider = new Swiper('.main-slider__body', {
 	/*
 	effect: 'fade',
 	autoplay: {
@@ -71,11 +71,11 @@ let sliderSlider = new Swiper('.slider', {
 	observeParents: true,
 	slidesPerView: 1,
 	spaceBetween: 0,
-	autoHeight: true,
+	// autoHeight: true,
 	speed: 800,
 	//touchRatio: 0,
 	//simulateTouch: false,
-	//loop: true,
+	loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
@@ -85,8 +85,8 @@ let sliderSlider = new Swiper('.slider', {
 	//},
 	// Arrows
 	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
+		nextEl: '.control-main-slider__arrow_next',
+		prevEl: '.control-main-slider__arrow_prev',
 	},
 	/*
 	breakpoints: {
