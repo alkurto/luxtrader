@@ -602,6 +602,10 @@ textarea.input {
   text-align: center;
 }
 
+.title {
+  text-align: center;
+}
+
 .title__item {
   font-family: "ceremonious";
   color: #bb9c66;
@@ -611,9 +615,10 @@ textarea.input {
 
 .title__main {
   font-family: "PFDin";
-  font-size: 35px;
+  --font-size: 35px;
+  font-size: var(--font-size);
   letter-spacing: 5.25px;
-  line-height: 35px;
+  line-height: 1.3;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -1258,9 +1263,30 @@ body.ie ._ibg img {
 .item-main-slider__content {
   position: relative;
   z-index: 2;
+  height: 100%;
+}
+
+.item-main-slider__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .item-main-slider__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   font-family: "PT SANS";
   font-size: 15px;
   color: #fff;
@@ -1286,7 +1312,7 @@ body.ie ._ibg img {
 
 .control-main-slider__arrow {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 14px;
   height: 24px;
   cursor: pointer;
@@ -1327,6 +1353,189 @@ body.ie ._ibg img {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.lots {
+  padding: 85px 0px 63px 0px;
+}
+
+.lots__header {
+  margin: 0px 0px 50px 0px;
+}
+
+.block-header__title {
+  margin: 0px 0px 20px 0px;
+}
+
+.block-decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block-decor__items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-decor__items:before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #bb9c66;
+}
+
+.block-decor__items:after {
+  content: '';
+  height: 18px;
+  width: 18px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18px;
+          flex: 0 0 18px;
+  border: 1px solid #bb9c66;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.block-decor__items span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+}
+
+.block-decor__items span:before {
+  content: '';
+  height: 10px;
+  width: 10px;
+  margin: 0px 10px 0px 0px;
+  border-radius: 50%;
+  border: 1px solid #bb9c66;
+}
+
+.block-decor__items span:after {
+  content: '';
+  height: 10.8px;
+  width: 10.8px;
+  border: 1px solid #bb9c66;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.block-decor__items:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.block-decor__items:last-child span {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.block-decor__items:last-child span:before {
+  margin: 0px 0px 0px 10px;
+}
+
+.block-decor__icon {
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 145px;
+          flex: 0 0 145px;
+}
+
+.block-decor__icon img {
+  max-width: 100%;
+}
+
+.control-slider-lots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.control-slider-lots__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  max-width: 108px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 108px;
+          flex: 1 1 108px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.control-slider-lots__arrow span {
+  background: url("../img/icons/sl-arrow.svg") 0 0 no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.control-slider-lots__arrow:last-child {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.control-slider-lots__arrow:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  margin: 0px 0px 0px 5px;
+  border-radius: 50%;
+  border: 1px solid #bb9c66;
+}
+
+._no-webp .control-slider-lots__link{
+  background: url("../img/icons/circle.png") 0 0 no-repeat; }
+
+.control-slider-lots__link {
+  margin: 0 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 21px;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "PFDin";
 }
 
 @media (min-width: 650px) {
@@ -1387,6 +1596,10 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 767.98px) {
+  .title__main {
+    font-size: 30px;
+  }
+
   .header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1409,7 +1622,7 @@ body.ie ._ibg img {
   }
 
   .menu__body {
-    background-color: rgba(29, 37, 43, 0.784);
+    background-color: rgba(29, 37, 43, 0.95);
     position: fixed;
     left: 0;
     top: 0;
@@ -1519,8 +1732,16 @@ body.ie ._ibg img {
             transform: rotate(45deg);
     bottom: calc(50% - 1px);
   }
+
+  .block-decor__icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95px;
+            flex: 0 0 95px;
+  }
 }
 
 ._webp .actions-header__region{ background: url(../img/icons/globe.webp) left no-repeat; }
 
 ._webp .control-main-slider__arrow{ background: url(../img/icons/sl-arrow.webp) 0 0 no-repeat; }
+
+._webp .control-slider-lots__link{ background: url(../img/icons/circle.webp) 0 0 no-repeat; }
